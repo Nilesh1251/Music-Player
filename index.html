@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music-player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a0688649e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="mus-ply">
+            <!-- <img src="./source/blank-dark-wall-living-room.jpg"  class="img"> -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="./source/musicbg.jpg" class="song-img">
+            <h1>Hanuman Chalisa</h1>
+            <p>Sai charan</p>
+
+            <!-- <audio controls id="song"> -->
+                <audio id="song">
+                <source src="./source/hanuman-Chalisa.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrl"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
